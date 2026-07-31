@@ -10,9 +10,14 @@
   --color-bg-soft: #e8d3c1;
   --color-primary: #6b5353;
   --color-primary-dark: #0e0a1170;
+
+  --color-primary-light: #e4f3ef;
+  --color-accent: #2f6fed;
+  --color-dark-box: #6b5353;
   --color-primary-light: #000000;
   --color-accent: #000000;
   --color-dark-box: #6b5353;
+
   --color-text: #1a2420;
   --color-text-muted: #5b6b66;
   --color-white: #f4f4f4;
@@ -234,7 +239,11 @@ body {
 }
  
 .check-icon {
+
+  color: #26ffc9;
+
   color: #01ffc4;
+
   font-weight: 700;
 }
  
