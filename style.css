@@ -11,8 +11,8 @@
   --color-primary: #6b5353;
   --color-primary-dark: #0e0a1170;
   --color-primary-light: #e4f3ef;
-  --color-accent: #2f6fed;
-  --color-dark-box: #1b2340;
+  --color-accent: #000000;
+  --color-dark-box: #6b5353;
   --color-text: #1a2420;
   --color-text-muted: #5b6b66;
   --color-white: #f4f4f4;
@@ -138,7 +138,7 @@ body {
 .hero-subtitle {
   margin: 0;
   font-size: 0.9rem;
-  color: #c7d6d1;
+  color: #000000;
   line-height: 1.5;
   max-width: 320px;
 }
@@ -234,7 +234,7 @@ body {
 }
  
 .check-icon {
-  color: #7fe0c8;
+  color: #01ffc4;
   font-weight: 700;
 }
  
