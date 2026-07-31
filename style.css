@@ -6,8 +6,8 @@
  
 :root {
   /* Cores principais (paleta provisória — troquem à vontade) */
-  --color-bg: #fbeda6;
-  --color-bg-soft: #f4f4f4;
+  --color-bg: #1668af;
+  --color-bg-soft: #3396b4;
   --color-primary: #1d7a6b;
   --color-primary-dark: #145349;
   --color-primary-light: #e4f3ef;
@@ -15,7 +15,7 @@
   --color-dark-box: #1b2340;
   --color-text: #1a2420;
   --color-text-muted: #5b6b66;
-  --color-white: #ffffff;
+  --color-white: #f4f4f4;
   --color-border: #dbe6e2;
  
   /* Tipografia */
