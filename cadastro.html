@@ -51,6 +51,16 @@
 
     </div>
 
+     <script>
+        function selecionarTipo(botaoClicado) {
+            document.querySelectorAll('.tipo-btn').forEach(function (btn) {
+                btn.classList.remove('ativo');
+            });
+            botaoClicado.classList.add('ativo');
+            document.getElementById('tipoConta').value = botaoClicado.dataset.tipo;
+        }
+    </script>
+
 </body>
 
 </html>
