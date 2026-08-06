@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -228,6 +229,25 @@ body {
     font-size: 17px;
     color: #222;
     margin-bottom: 4px;
+}
+ 
+.tipo-tag {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 9px;
+    border-radius: 20px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+ 
+.tipo-individual {
+    background: #ece4f7;
+    color: #6a3fb5;
+}
+ 
+.tipo-grupo {
+    background: #e4f1ec;
+    color: #227a5b;
 }
  
 .trabalho-prazo {
