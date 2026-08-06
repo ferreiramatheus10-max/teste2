@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -86,7 +85,7 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
  
 .btn-menu {
@@ -109,13 +108,110 @@ body {
     color: #777;
 }
  
+/* ===== CARDS DE RESUMO ===== */
+ 
+.resumo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    max-width: 900px;
+    margin-bottom: 22px;
+}
+ 
+.resumo-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    border-left: 5px solid #6b5353;
+}
+ 
+.resumo-numero {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+ 
+.resumo-label {
+    font-size: 13px;
+    color: #888;
+}
+ 
+.resumo-pendente {
+    border-left-color: #d98a1f;
+}
+ 
+.resumo-andamento {
+    border-left-color: #2554c7;
+}
+ 
+.resumo-entregue {
+    border-left-color: #1f8a3d;
+}
+ 
+/* ===== PRÓXIMO PRAZO ===== */
+ 
+.proximo-prazo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fdecd2;
+    color: #7a4a06;
+    border-radius: 12px;
+    padding: 14px 20px;
+    max-width: 900px;
+    margin-bottom: 32px;
+    font-size: 14px;
+}
+ 
+.proximo-prazo-icone {
+    font-size: 18px;
+}
+ 
+/* ===== CATEGORIAS ===== */
+ 
+.categoria {
+    max-width: 720px;
+    margin-bottom: 28px;
+}
+ 
+.categoria-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+    color: #444;
+    margin-bottom: 14px;
+}
+ 
+.bolinha {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+ 
+.bolinha-pendente {
+    background: #d98a1f;
+}
+ 
+.bolinha-andamento {
+    background: #2554c7;
+}
+ 
+.bolinha-entregue {
+    background: #1f8a3d;
+}
+ 
 /* ===== LISTA DE TRABALHOS ===== */
  
 .lista-trabalhos {
     display: flex;
     flex-direction: column;
     gap: 14px;
-    max-width: 720px;
 }
  
 .trabalho-card {
@@ -184,6 +280,10 @@ body {
  
     .conteudo {
         padding: 22px;
+    }
+ 
+    .resumo {
+        grid-template-columns: repeat(2, 1fr);
     }
  
     .trabalho-card {

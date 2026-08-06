@@ -56,32 +56,80 @@
                 </div>
             </header>
  
-            <section class="lista-trabalhos">
+            <!-- ===== CARDS DE RESUMO ===== -->
+            <section class="resumo">
+                <div class="resumo-card">
+                    <span class="resumo-numero">3</span>
+                    <span class="resumo-label">Total de trabalhos</span>
+                </div>
+                <div class="resumo-card resumo-pendente">
+                    <span class="resumo-numero">1</span>
+                    <span class="resumo-label">Pendente</span>
+                </div>
+                <div class="resumo-card resumo-andamento">
+                    <span class="resumo-numero">1</span>
+                    <span class="resumo-label">Em andamento</span>
+                </div>
+                <div class="resumo-card resumo-entregue">
+                    <span class="resumo-numero">1</span>
+                    <span class="resumo-label">Entregue</span>
+                </div>
+            </section>
  
-                <article class="trabalho-card">
-                    <div class="trabalho-info">
-                        <h2 class="trabalho-titulo">Projeto de Sustentabilidade</h2>
-                        <p class="trabalho-prazo">Prazo: 10 de agosto de 2026</p>
-                    </div>
-                    <span class="status status-andamento">Em andamento</span>
-                </article>
+            <!-- ===== PRÓXIMO PRAZO ===== -->
+            <section class="proximo-prazo">
+                <span class="proximo-prazo-icone">⚠️</span>
+                <p><strong>Apresentação de História</strong> vence em breve — prazo: 6 de agosto de 2026</p>
+            </section>
  
-                <article class="trabalho-card">
-                    <div class="trabalho-info">
-                        <h2 class="trabalho-titulo">Resumo de Biologia - Capítulo 4</h2>
-                        <p class="trabalho-prazo">Prazo: 12 de agosto de 2026</p>
-                    </div>
-                    <span class="status status-pendente">Pendente</span>
-                </article>
+            <!-- ===== TRABALHOS POR CATEGORIA ===== -->
  
-                <article class="trabalho-card">
-                    <div class="trabalho-info">
-                        <h2 class="trabalho-titulo">Apresentação de História</h2>
-                        <p class="trabalho-prazo">Prazo: 6 de agosto de 2026</p>
-                    </div>
-                    <span class="status status-entregue">Entregue</span>
-                </article>
+            <section class="categoria">
+                <h2 class="categoria-titulo">
+                    <span class="bolinha bolinha-pendente"></span>
+                    Pendente
+                </h2>
+                <div class="lista-trabalhos">
+                    <article class="trabalho-card">
+                        <div class="trabalho-info">
+                            <h3 class="trabalho-titulo">Resumo de Biologia - Capítulo 4</h3>
+                            <p class="trabalho-prazo">Prazo: 12 de agosto de 2026</p>
+                        </div>
+                        <span class="status status-pendente">Pendente</span>
+                    </article>
+                </div>
+            </section>
  
+            <section class="categoria">
+                <h2 class="categoria-titulo">
+                    <span class="bolinha bolinha-andamento"></span>
+                    Em andamento
+                </h2>
+                <div class="lista-trabalhos">
+                    <article class="trabalho-card">
+                        <div class="trabalho-info">
+                            <h3 class="trabalho-titulo">Projeto de Sustentabilidade</h3>
+                            <p class="trabalho-prazo">Prazo: 10 de agosto de 2026</p>
+                        </div>
+                        <span class="status status-andamento">Em andamento</span>
+                    </article>
+                </div>
+            </section>
+ 
+            <section class="categoria">
+                <h2 class="categoria-titulo">
+                    <span class="bolinha bolinha-entregue"></span>
+                    Entregue
+                </h2>
+                <div class="lista-trabalhos">
+                    <article class="trabalho-card">
+                        <div class="trabalho-info">
+                            <h3 class="trabalho-titulo">Apresentação de História</h3>
+                            <p class="trabalho-prazo">Prazo: 6 de agosto de 2026</p>
+                        </div>
+                        <span class="status status-entregue">Entregue</span>
+                    </article>
+                </div>
             </section>
  
         </div>
