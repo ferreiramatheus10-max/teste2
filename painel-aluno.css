@@ -114,7 +114,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
-    max-width: 900px;
+    max-width: 1240px;
     margin-bottom: 22px;
 }
  
@@ -162,7 +162,7 @@ body {
     color: #7a4a06;
     border-radius: 12px;
     padding: 14px 20px;
-    max-width: 900px;
+    max-width: 1240px;
     margin-bottom: 32px;
     font-size: 14px;
 }
@@ -174,7 +174,7 @@ body {
 /* ===== CATEGORIAS ===== */
  
 .categoria {
-    max-width: 720px;
+    max-width: 1240px;
     margin-bottom: 28px;
 }
  
