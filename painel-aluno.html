@@ -4,16 +4,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel do Aluno - TungProject</title>
+    <title>Meus Trabalhos - TungProject</title>
+    <link rel="stylesheet" href="painel-aluno.css">
 </head>
  
 <body>
  
-    <h1>Painel do Aluno</h1>
-    <p>Em construçãoo.</p>
+    <div class="app">
+ 
+        <!-- ===== SIDEBAR ===== -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-topo">
+                <span class="sidebar-logo">TungProject</span>
+            </div>
+ 
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item ativo">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-texto">Início</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">📚</span>
+                    <span class="nav-texto">Meus Trabalhos</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">⏰</span>
+                    <span class="nav-texto">Prazos</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">👤</span>
+                    <span class="nav-texto">Perfil</span>
+                </a>
+            </nav>
+ 
+            <div class="sidebar-rodape">
+                <a href="index.html" class="nav-item sair">
+                    <span class="nav-icon">←</span>
+                    <span class="nav-texto">Sair</span>
+                </a>
+            </div>
+        </aside>
+ 
+        <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+        <div class="conteudo">
+ 
+            <header class="topo">
+                <button class="btn-menu" id="btnMenu" aria-label="Abrir menu">☰</button>
+                <div class="topo-texto">
+                    <h1>Olá, aluno</h1>
+                    <p>Aqui estão os trabalhos do seu grupo</p>
+                </div>
+            </header>
+ 
+            <section class="lista-trabalhos">
+ 
+                <article class="trabalho-card">
+                    <div class="trabalho-info">
+                        <h2 class="trabalho-titulo">Projeto de Sustentabilidade</h2>
+                        <p class="trabalho-prazo">Prazo: 10 de agosto de 2026</p>
+                    </div>
+                    <span class="status status-andamento">Em andamento</span>
+                </article>
+ 
+                <article class="trabalho-card">
+                    <div class="trabalho-info">
+                        <h2 class="trabalho-titulo">Resumo de Biologia - Capítulo 4</h2>
+                        <p class="trabalho-prazo">Prazo: 12 de agosto de 2026</p>
+                    </div>
+                    <span class="status status-pendente">Pendente</span>
+                </article>
+ 
+                <article class="trabalho-card">
+                    <div class="trabalho-info">
+                        <h2 class="trabalho-titulo">Apresentação de História</h2>
+                        <p class="trabalho-prazo">Prazo: 6 de agosto de 2026</p>
+                    </div>
+                    <span class="status status-entregue">Entregue</span>
+                </article>
+ 
+            </section>
+ 
+        </div>
+ 
+    </div>
+ 
+    <script>
+        // Abre/fecha a sidebar no celular
+        const btnMenu = document.getElementById('btnMenu');
+        const sidebar = document.getElementById('sidebar');
+ 
+        btnMenu.addEventListener('click', function () {
+            sidebar.classList.toggle('aberta');
+        });
+    </script>
  
 </body>
  
 </html>
  
-
