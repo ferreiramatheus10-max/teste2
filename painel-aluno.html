@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Trabalhos - TungProject</title>
-    <link rel="stylesheet" href="painel-aluno.css">
+    <title>Meus Grupos - TungProject</title>
+    <link rel="stylesheet" href="painel-professor.css">
 </head>
  
 <body>
@@ -24,12 +24,12 @@
                     <span class="nav-texto">Início</span>
                 </a>
                 <a href="#" class="nav-item">
-                    <span class="nav-icon">📚</span>
-                    <span class="nav-texto">Meus Trabalhos</span>
+                    <span class="nav-icon">👥</span>
+                    <span class="nav-texto">Meus Grupos</span>
                 </a>
                 <a href="#" class="nav-item">
-                    <span class="nav-icon">⏰</span>
-                    <span class="nav-texto">Prazos</span>
+                    <span class="nav-icon">📋</span>
+                    <span class="nav-texto">Trabalhos Criados</span>
                 </a>
                 <a href="#" class="nav-item">
                     <span class="nav-icon">👤</span>
@@ -51,74 +51,88 @@
             <header class="topo">
                 <button class="btn-menu" id="btnMenu" aria-label="Abrir menu">☰</button>
                 <div class="topo-texto">
-                    <h1>Olá, aluno</h1>
-                    <p>Aqui estão os trabalhos do seu grupo</p>
+                    <h1>Olá, professor</h1>
+                    <p>Aqui está o progresso dos seus grupos</p>
                 </div>
             </header>
  
             <!-- ===== CARDS DE RESUMO ===== -->
             <section class="resumo">
                 <div class="resumo-card">
-                    <span class="resumo-numero" id="numTotal">2</span>
-                    <span class="resumo-label">Total de trabalhos</span>
+                    <span class="resumo-numero">3</span>
+                    <span class="resumo-label">Grupos ativos</span>
                 </div>
-                <div class="resumo-card resumo-pendente">
-                    <span class="resumo-numero" id="numPendente">0</span>
-                    <span class="resumo-label">Pendente</span>
+                <div class="resumo-card">
+                    <span class="resumo-numero">8</span>
+                    <span class="resumo-label">Alunos no total</span>
                 </div>
-                <div class="resumo-card resumo-andamento">
-                    <span class="resumo-numero" id="numAndamento">1</span>
-                    <span class="resumo-label">Em andamento</span>
+                <div class="resumo-card resumo-atencao">
+                    <span class="resumo-numero">3</span>
+                    <span class="resumo-label">Trabalhos com pendência</span>
                 </div>
                 <div class="resumo-card resumo-entregue">
-                    <span class="resumo-numero" id="numEntregue">1</span>
-                    <span class="resumo-label">Entregue</span>
+                    <span class="resumo-numero">5</span>
+                    <span class="resumo-label">Trabalhos em dia</span>
                 </div>
             </section>
  
-            <!-- ===== TRABALHOS POR CATEGORIA ===== -->
- 
-            <section class="categoria">
-                <h2 class="categoria-titulo">
-                    <span class="bolinha bolinha-pendente"></span>
-                    Pendente
-                </h2>
-                <div class="lista-trabalhos" id="listaPendente">
-                    <!-- trabalhos individuais reais entram aqui via Firebase -->
-                </div>
+            <!-- ===== ALERTA ===== -->
+            <section class="alerta">
+                <span class="alerta-icone">⚠️</span>
+                <p><strong>2 alunos</strong> ainda não entregaram "Resumo de Biologia - Capítulo 4"</p>
             </section>
  
-            <section class="categoria">
-                <h2 class="categoria-titulo">
-                    <span class="bolinha bolinha-andamento"></span>
-                    Em andamento
-                </h2>
-                <div class="lista-trabalhos" id="listaAndamento">
-                    <article class="trabalho-card">
-                        <div class="trabalho-info">
-                            <h3 class="trabalho-titulo">Projeto de Sustentabilidade <span class="tipo-tag tipo-grupo">Grupo</span></h3>
-                            <p class="trabalho-prazo">Prazo: 10 de agosto de 2026</p>
+            <!-- ===== LISTA DE GRUPOS ===== -->
+            <section class="secao-grupos">
+                <h2 class="secao-titulo">Meus Grupos</h2>
+ 
+                <div class="lista-grupos">
+ 
+                    <article class="grupo-card">
+                        <div class="grupo-info">
+                            <h3 class="grupo-titulo">Grupo do João</h3>
+                            <p class="grupo-alunos">👥 3 alunos — Enzo, Ezekiel, Pedro</p>
+                            <div class="barra-progresso">
+                                <div class="barra-preenchida" style="width: 66%"></div>
+                            </div>
+                            <p class="grupo-progresso-texto">2 de 3 trabalhos entregues</p>
                         </div>
                         <span class="status status-andamento">Em andamento</span>
                     </article>
-                    <!-- trabalhos individuais reais entram aqui via Firebase -->
+ 
+                    <article class="grupo-card">
+                        <div class="grupo-info">
+                            <h3 class="grupo-titulo">Grupo da Ana</h3>
+                            <p class="grupo-alunos">👥 3 alunos — Lucas, João, Plovas</p>
+                            <div class="barra-progresso">
+                                <div class="barra-preenchida barra-atencao" style="width: 33%"></div>
+                            </div>
+                            <p class="grupo-progresso-texto">1 de 3 trabalhos entregues</p>
+                        </div>
+                        <span class="status status-pendente">Atenção</span>
+                    </article>
+ 
+                    <article class="grupo-card">
+                        <div class="grupo-info">
+                            <h3 class="grupo-titulo">Grupo do Rafael</h3>
+                            <p class="grupo-alunos">👥 2 alunos — Anthony, Gabriel</p>
+                            <div class="barra-progresso">
+                                <div class="barra-preenchida barra-completa" style="width: 100%"></div>
+                            </div>
+                            <p class="grupo-progresso-texto">3 de 3 trabalhos entregues</p>
+                        </div>
+                        <span class="status status-entregue">Concluído</span>
+                    </article>
+ 
                 </div>
             </section>
  
-            <section class="categoria">
-                <h2 class="categoria-titulo">
-                    <span class="bolinha bolinha-entregue"></span>
-                    Entregue
-                </h2>
-                <div class="lista-trabalhos" id="listaEntregue">
-                    <article class="trabalho-card">
-                        <div class="trabalho-info">
-                            <h3 class="trabalho-titulo">Apresentação de História <span class="tipo-tag tipo-grupo">Grupo</span></h3>
-                            <p class="trabalho-prazo">Prazo: 6 de agosto de 2026</p>
-                        </div>
-                        <span class="status status-entregue">Entregue</span>
-                    </article>
-                    <!-- trabalhos individuais reais entram aqui via Firebase -->
+            <!-- ===== TRABALHOS INDIVIDUAIS ===== -->
+            <section class="secao-grupos">
+                <h2 class="secao-titulo">Trabalhos Individuais</h2>
+ 
+                <div class="lista-grupos" id="listaIndividuais">
+                    <p class="carregando" id="msgCarregando">Carregando trabalhos...</p>
                 </div>
             </section>
  
@@ -160,15 +174,9 @@
         const auth = getAuth(app);
         const db = getFirestore(app);
  
-        // Contadores base: os 2 trabalhos de grupo fixos (exemplo de demonstração)
-        const BASE_TOTAL = 2;
-        const BASE_ANDAMENTO = 1;
-        const BASE_ENTREGUE = 1;
-        const BASE_PENDENTE = 0;
- 
-        function criarCardTrabalho(trabalho) {
+        function criarCardIndividual(trabalho) {
             const card = document.createElement('article');
-            card.className = 'trabalho-card';
+            card.className = 'grupo-card';
  
             const statusLabel = {
                 pendente: 'Pendente',
@@ -177,9 +185,9 @@
             }[trabalho.status] || trabalho.status;
  
             card.innerHTML = `
-                <div class="trabalho-info">
-                    <h3 class="trabalho-titulo">${trabalho.titulo} <span class="tipo-tag tipo-individual">Individual</span></h3>
-                    <p class="trabalho-prazo">Prazo: ${trabalho.prazo}</p>
+                <div class="grupo-info">
+                    <h3 class="grupo-titulo">${trabalho.alunoNome} <span class="tipo-tag tipo-individual">Individual</span></h3>
+                    <p class="grupo-alunos">📄 ${trabalho.titulo} — prazo: ${trabalho.prazo}</p>
                 </div>
                 <span class="status status-${trabalho.status}">${statusLabel}</span>
             `;
@@ -187,55 +195,27 @@
             return card;
         }
  
-        function atualizarContadores(trabalhosIndividuais) {
-            let pendente = BASE_PENDENTE, andamento = BASE_ANDAMENTO, entregue = BASE_ENTREGUE;
- 
-            trabalhosIndividuais.forEach(function (t) {
-                if (t.status === 'pendente') pendente++;
-                else if (t.status === 'andamento') andamento++;
-                else if (t.status === 'entregue') entregue++;
-            });
- 
-            document.getElementById('numPendente').textContent = pendente;
-            document.getElementById('numAndamento').textContent = andamento;
-            document.getElementById('numEntregue').textContent = entregue;
-            document.getElementById('numTotal').textContent = BASE_TOTAL + trabalhosIndividuais.length;
-        }
- 
         onAuthStateChanged(auth, function (user) {
             if (!user) {
-                // Ninguém logado, volta pro login
                 window.location.href = "login.html";
                 return;
             }
  
-            const q = query(collection(db, "trabalhos"), where("alunoId", "==", user.uid));
+            const q = query(collection(db, "trabalhos"), where("tipo", "==", "individual"));
  
             onSnapshot(q, function (snapshot) {
-                const listaPendente = document.getElementById('listaPendente');
-                const listaAndamento = document.getElementById('listaAndamento');
-                const listaEntregue = document.getElementById('listaEntregue');
+                const lista = document.getElementById('listaIndividuais');
+                lista.innerHTML = "";
  
-                // Remove só os trabalhos individuais renderizados antes (mantém os de grupo fixos)
-                document.querySelectorAll('.trabalho-card[data-individual="true"]').forEach(function (el) {
-                    el.remove();
-                });
- 
-                const trabalhosIndividuais = [];
+                if (snapshot.empty) {
+                    lista.innerHTML = '<p class="carregando">Nenhum trabalho individual cadastrado ainda.</p>';
+                    return;
+                }
  
                 snapshot.forEach(function (docSnap) {
                     const trabalho = docSnap.data();
-                    trabalhosIndividuais.push(trabalho);
- 
-                    const card = criarCardTrabalho(trabalho);
-                    card.setAttribute('data-individual', 'true');
- 
-                    if (trabalho.status === 'pendente') listaPendente.appendChild(card);
-                    else if (trabalho.status === 'andamento') listaAndamento.appendChild(card);
-                    else if (trabalho.status === 'entregue') listaEntregue.appendChild(card);
+                    lista.appendChild(criarCardIndividual(trabalho));
                 });
- 
-                atualizarContadores(trabalhosIndividuais);
             });
         });
     </script>
